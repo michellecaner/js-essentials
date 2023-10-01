@@ -19,6 +19,8 @@ const backpack = {
     this.strapLength.left = lengthLeft;
     this.strapLength.right = lengthRight;
   },
+  
+
 };
 
 console.log("The backpack object:", backpack);

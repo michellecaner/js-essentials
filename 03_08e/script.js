@@ -19,6 +19,12 @@ const backpack = {
     this.strapLength.left = lengthLeft;
     this.strapLength.right = lengthRight;
   },
+  newColorSelection: function (newColor) {
+    this.color = newColor;
+  },
+  volumeExtender: function (newVolume) {
+    this.volume = newVolume;
+  },
 };
 
 console.log("The backpack object:", backpack);
@@ -29,3 +35,11 @@ console.log("Left before:", backpack.strapLength.left);
 backpack.newStrapLength(10, 15);
 
 console.log("Left after:", backpack.strapLength.left);
+
+backpack.newColorSelection("green");
+
+console.log("The backpack's new color is: ", backpack.color);
+
+backpack.volumeExtender(40);
+
+console.log("The backpack's new volume is: ", backpack.volume);
