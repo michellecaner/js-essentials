@@ -57,3 +57,20 @@ const content = `
       }</span></li>
     </ul>  
 `;
+
+// I have no idea how to make this helper function situation work :(
+
+const createFigure = () => {
+  let newFigure = document.createElement("figure");
+  newFigure.setAttribute("img", frogpack.image);
+
+  return newFigure;
+};
+
+const createArticle = () => {
+  let newArticle = document.createElement("article");
+  newArticle.innerHTML = content;
+  return newArticle;
+};
+const main = document.querySelector("main");
+main.append(createArticle(createFigure()));
